@@ -1,0 +1,50 @@
+.advantages-section
+{
+    padding-top: 94px;
+}
+
+.backgrd-icon-advant
+{   
+    padding: 25px 100px;
+    margin-bottom: 50px;
+    
+    background-color: #F5F4FA;
+}
+
+
+
+.advantages-list
+{
+    display: flex;
+
+}
+
+
+.advantages-link
+{
+width: calc((100%-90px) / 4);
+}
+
+
+.advantages-link:not(:last-child)
+{
+    margin-right: 30px;
+}
+
+
+.advantages-subtitle
+{
+    color: $primery-text-color;
+    font-weight: $title-font-weight;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.advantages-disc
+{
+    color: $accent-color;
+    line-height: 1.7;
+    margin: 0px;
+    padding: 0px;
+}

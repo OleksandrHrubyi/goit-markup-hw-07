@@ -1,0 +1,17 @@
+.logo
+{
+    display: block;
+    margin-right: 85px;
+
+    color: $logo-primery-color;
+    font-family: $logo-font-family;
+    font-size: $logo-font-size;
+    line-height: $logo-line-height;
+    font-weight: $logo-font-weight;
+    text-decoration: none;
+}
+
+.logo-web
+{
+   color: $logo-secondary-color;
+}

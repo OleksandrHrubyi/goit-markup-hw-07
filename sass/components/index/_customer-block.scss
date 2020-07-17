@@ -1,0 +1,85 @@
+.costumer-section
+{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.custumer-list
+{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+    
+}
+
+.customer-item
+{
+    width: calc((100% - 150px) / 6);
+}
+.customer-item:not(:last-child)
+{
+    margin-right: 30px;
+}
+
+
+
+.costumer-title
+{
+    text-align: center;
+    color: $primery-text-color;
+    font-size: $title-font-size;
+    font-weight: $title-font-weight;
+    line-height: $title-line-height;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    padding: 0px;
+}
+
+.costumer-subtitle
+{
+    display: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+.customer-link-icon
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    width: 170px;
+    height: 90px;
+    @include border ($secondary-color);
+    border-radius: 4px;
+    @include animation (border);
+    @include animation (color);
+    
+    color: $secondary-color;
+
+    &:hover,
+    &:focus
+{
+    @include border ($accent-color-blue);
+    color: $accent-color-blue;
+}
+
+}
+
+
+
+.costomer-icon
+{
+   fill: currentColor;
+   
+}
+
+

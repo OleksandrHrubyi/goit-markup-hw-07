@@ -1,0 +1,175 @@
+.nav-header
+{
+    
+    display: flex;
+    
+}
+
+.nav-menu
+{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+/* headers navigation */
+
+.nav-item
+{
+    position: relative;
+}
+
+
+.nav-item:not(:last-child)
+{
+    margin-right: 50px;
+   }
+
+
+
+
+.nav-link
+{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $primery-text-color;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    @include animation (color);
+
+
+    &:hover,
+    &:focus
+{
+    color:$accent-color-blue;
+
+}
+}
+
+
+
+
+
+
+.active 
+{
+    color: $accent-color-blue;
+}
+
+.active::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: $accent-color-blue;
+}
+
+
+/* headers contacts */
+
+.header-container
+{
+    display: flex;
+    align-items: center;
+}
+
+.address-contact
+{
+   
+    margin-left: auto;
+}
+
+
+.nav-contacts
+{
+  
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $accent-color;
+    text-decoration: none;
+    font-style: normal;
+    @include animation (color);
+
+    &:hover,
+    &:focus
+{
+    color:$accent-color-blue;
+}
+
+
+
+}
+
+
+.nav-contacts:not(:last-child)
+{
+    margin-right: 30px;
+}
+
+
+
+
+
+
+.icon-header
+{
+   
+    margin-right: 10px;
+    fill: $accent-color;
+    @include animation (fill);
+}
+
+
+.nav-contacts:hover .icon-header
+{
+    fill: $accent-color-blue;
+}
+
+
+/* buttons */
+.button
+{
+    font-weight: 700;
+    line-height: 1.88;
+    display: inline-block;
+    min-width: 200px;
+    color: $secondary-text-color;
+    background-color: $accent-color-blue;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    @include animation (color);
+
+
+    &:hover,
+    &:focus
+{
+    color: $button-hover-color;
+}
+    
+}
+
+
+
+
+.button.primery
+{
+    padding: 10px 32px;
+}
+
+.button.secondary
+{
+    display: flex;
+    padding: 10px 28px;
+    align-items: center;
+}
